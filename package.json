@@ -1,0 +1,13 @@
+{
+  "name": "timeaura",
+  "version": "1.0.0",
+  "description": "TimeAura - Premium Watch & Sunglasses E-Commerce",
+  "scripts": {
+    "install:all": "cd server && npm install && cd ../client && npm install",
+    "seed": "cd server && npm run seed",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "start:server": "cd server && npm start"
+  },
+  "private": true
+}
