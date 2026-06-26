@@ -103,7 +103,7 @@ export default function AdminBrands() {
       const fd = new FormData();
       fd.append('images', file);
 
-      const res = await api.post('/upload/images', fd);
+      const res = await api.post('/upload/images?type=brands', fd);
 
       const uploadedUrl = res.data.urls?.[0];
 

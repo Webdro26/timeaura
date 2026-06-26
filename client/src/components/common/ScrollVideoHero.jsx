@@ -169,14 +169,14 @@ export default function ScrollVideoHero() {
             <p className="label-luxury mb-6">Luxury Timepieces & Eyewear</p>
 
             <h1
-              className="heading-display mb-6"
+             className="heading-display hero-title-light"
               style={{ fontSize: 'clamp(52px, 10vw, 130px)', letterSpacing: '0.18em' }}
             >
               TIMEAURA
             </h1>
 
             <p
-              className="mb-4"
+              className="hero-subtitle-light"
               style={{
                 color: 'var(--accent-gold-light)',
                 fontFamily: 'Playfair Display, serif',
@@ -187,7 +187,7 @@ export default function ScrollVideoHero() {
               Precision Meets Style
             </p>
 
-            <p className="mx-auto mb-10 max-w-xl text-sm md:text-base" style={{ color: 'var(--text-muted)', lineHeight: 1.8 }}>
+            <p className="mx-auto mb-10 max-w-xl text-[13px] md:text-base" style={{ color: 'var(--text-muted)', lineHeight: 1.8 }}>
               Premium watches and sunglasses curated for modern luxury.
             </p>
 

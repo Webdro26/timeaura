@@ -57,7 +57,7 @@ const [glassBrands, setGlassBrands] = useState([]);
     try {
       const formData = new FormData();
       files.forEach(f => formData.append('images', f));
-      const res = await api.post('/upload/images', formData);
+      const res = await api.post('/upload/images?type=products', formData);
       setForm(p => ({ ...p, images: [...p.images, ...res.data.urls] }));
       toast.success('Images uploaded');
     } catch { toast.error('Upload failed — check Cloudinary credentials'); }
