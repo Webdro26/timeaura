@@ -8,10 +8,9 @@ const Coupon = require('../models/Coupon');
 const { optionalAuth } = require('../middleware/auth');
 
 const razorpay = new Razorpay({
-  key_id: process.env.RAZORPAY_KEY_ID,
-  key_secret: process.env.RAZORPAY_KEY_SECRET,
+  key_id: process.env.RAZORPAY_KEY_ID || "rzp_test_dummy",
+  key_secret: process.env.RAZORPAY_KEY_SECRET || "dummy_secret",
 });
-
 // Create Razorpay order
 router.post('/create-order', optionalAuth, async (req, res) => {
   try {

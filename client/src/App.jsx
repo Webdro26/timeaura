@@ -1,3 +1,4 @@
+import AnimatedBackground from "./components/common/AnimatedBackground";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 import { AuthProvider } from './context/AuthContext';
@@ -45,6 +46,7 @@ export default function App() {
     <BrowserRouter>
       <AuthProvider>
         <CartProvider>
+          <AnimatedBackground />
           <Toaster position="top-right" />
           <Routes>
             {/* Public */}
